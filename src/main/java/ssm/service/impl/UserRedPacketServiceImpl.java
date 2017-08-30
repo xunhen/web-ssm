@@ -36,6 +36,7 @@ public class UserRedPacketServiceImpl implements UserRedPacketService {
 		// 悲观锁
 		/*logger.info("This is debug message.");*/
 		RedPacket redPacket = redPacketDao.getRedPacketForUpdate(redPacketId);
+		System.out.println(userId+"——true——");
 		// 当前小红包库存大于0
 		if (redPacket.getStock() > 0) {
 			System.out.println(userId+"——true——"+redPacketDao.getRedPacket(redPacketId).getStock());

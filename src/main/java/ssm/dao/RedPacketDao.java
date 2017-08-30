@@ -14,6 +14,8 @@ public interface RedPacketDao {
 	 */
 	public RedPacket getRedPacket(Long id);
 
+
+
 	/**
 	 * 扣减抢红包数.
 	 * @param id -- 红包id
